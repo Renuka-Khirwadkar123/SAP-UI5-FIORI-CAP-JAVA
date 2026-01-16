@@ -1,7 +1,8 @@
-namespace  my.company;
+namespace my.company;
+
 entity Employees {
-  key ID   : Integer;
-      name : String(100);
-      role  : Integer;
-      salary : Integer;
+  key ID    : UUID;
+      name  : String(100);
+      role  : String(50);
+      salary: Decimal(10,2);
 }
