@@ -2,7 +2,11 @@ namespace my.company;
 
 entity Employees {
   key ID    : UUID;
-      name  : String(100);
-      role  : String(50);
-      salary: Decimal(10,2);
+      FirstName  : String(100);
+      LastName  : String(50);
+      Role      : String(50);
+      Salary    : Decimal(10,2);
+      dateOfJoining : Date;
+      ManagerName : String(100);
+      Department  : String(100);
 }
